@@ -17,7 +17,7 @@ params:
   output_subject_file: generated-subject
   output_body_file: generated-body
 jobs:
- - name:demo-prep-sha-email
+ - name: demo-prep-sha-email
    plan:
    - get: email-resource-source
    - put: send-an-email
