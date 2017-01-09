@@ -16,11 +16,3 @@ params:
   file_to_hash: email-resource-source/LICENSE
   output_subject_file: generated-subject
   output_body_file: generated-body
-jobs:
- - name: demo-prep-sha-email
-   plan:
-   - get: email-resource-source
-   - put: send-an-email
-     params:
-          subject: email-out/generated-subject
-          body: email-out/generated-body
